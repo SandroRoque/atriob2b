@@ -1,0 +1,7 @@
+Minimal‑Service Tech Stack
+
+Build & Dev Server: Vite (zero‑config, instant HMR)
+Front‑End Framework: Vue 3 (component‑based UI)
+Deployment / Hosting: GitHub Pages (free static hosting)
+Contact CTA: Plain mailto / tel / WhatsApp links (no third‑party form service)
+This stack uses only open‑source tooling and a free GitHub repository—no external SaaS required.

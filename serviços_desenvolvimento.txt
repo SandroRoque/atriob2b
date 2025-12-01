@@ -1,0 +1,31 @@
+🔶 3. Tecnologia & Desenvolvimento — por Sandro
+
+Entrega principal: integrações, automações, sistemas e dados.
+
+🔸 Basic
+
+Backlog e parametrizações simples de ERP
+
+Extrações básicas de dados
+
+Suporte para onboarding de sistemas
+
+🔸 Pro
+
+Tudo do Basic +
+
+Desenvolvimento de integrações entre sistemas
+
+Automação de processos manuais
+
+KPIs customizados para Power BI ou ERP
+
+🔸 Premium
+
+Tudo do Pro +
+
+Desenvolvimento de software sob demanda
+
+Projetos avançados de automação e banco de dados
+
+Manutenção mensal e monitoramento contínuo

@@ -1,0 +1,55 @@
+Quero que você gere a estrutura completa de um site institucional profissional para a empresa ATRIOB2B.
+
+A ATRIOB2B é uma consultoria completa que oferece três pilares de serviços independentes:
+1. BPO Financeiro (Eder)
+2. Controladoria e KPIs (Suan)
+3. Desenvolvimento de Software e Tecnologia (Sandro)
+
+O posicionamento da empresa é:
+- Consultoria completa, mas com contratação modular
+- Empresa de tecnologia com serviços complementares
+- Linguagem formal corporativa, leve, didática e orientada a resultados
+- Foco em pequenas e médias empresas
+
+O site deve incluir:
+- Página HOME
+- Página SOBRE
+- Página SERVIÇOS (com 3 seções: BPO, Controladoria, Tecnologia)
+- Cada área deve apresentar planos BASIC, PRO e PREMIUM
+- Página CONTATO (com formulário + botão WhatsApp)
+- Área futura para BLOG (pode deixar estrutura vazia)
+
+Os arquivos de referência já existentes no projeto são:
+- resources/color_palettescss.txt (paleta de cores da marca)
+- proposta_inicial.txt
+- serviços_bpo.txt
+- serviços_controladoria.txt
+- serviços_desenvolvimento.txt
+- tech_stack.txt
+
+Use estes arquivos como base para:
+- Paleta de cores do site
+- Conteúdo das páginas
+- Descrição dos serviços
+- Arquitetura técnica do projeto
+
+Requisitos para o projeto:
+- Usar o framework sugerido em tech_stack.txt
+- Criar componentes organizados
+- Criar navegação simples e responsiva
+- Criar seções claras com títulos, subtítulos e CTAs
+- Criar botões “Solicite uma proposta” e “Fale no WhatsApp”
+
+Instruções adicionais:
+- Gerar textos institucionais coerentes com o posicionamento da ATRIOB2B
+- Criar placeholders para imagens e ícones
+- Criar uma estrutura limpa, profissional e moderna
+- Seguir a paleta de cores do arquivo color_palettescss.txt
+- Preparar o projeto para fácil expansão (novas páginas no futuro)
+
+Agora gere:
+1. Estrutura inicial do projeto
+2. HTML completo de cada página
+3. CSS base conforme a paleta
+4. JS mínimo para navegação e interações
+5. Comentários explicativos no código

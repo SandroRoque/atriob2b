@@ -1,0 +1,33 @@
+🔶 2. Controladoria — por Suan
+
+Entrega principal: inteligência financeira, indicadores e insights.
+
+🔸 Basic
+
+Criação e manutenção de DRE básica
+
+Dashboard padrão em Power BI
+
+Reunião mensal de apresentação dos números
+
+🔸 Pro
+
+Tudo do Basic +
+
+KPIs personalizados (financeiro, operacional e comercial)
+
+Criação de visão de metas e orçamentos
+
+Acompanhamento quinzenal
+
+🔸 Premium
+
+Tudo do Pro +
+
+Modelos avançados de análise
+
+Forecast contínuo
+
+Controladoria como serviço (CFO Lite)
+
+Reuniões semanais com diretoria
