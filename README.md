@@ -1,95 +1,73 @@
-Quero que você gere um site institucional completo e profissional para a empresa ATRIOB2B utilizando Vite (já instalado no projeto).
+# React + TypeScript + Vite
 
-A ATRIOB2B é uma empresa que reúne 3 áreas diferentes, cada uma com contratação modular:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-1. BPO Financeiro – liderado por Eder
-   - Execução de tesouraria
-   - Consultoria em processos
-   - Expertise em ERP
+Currently, two official plugins are available:
 
-2. Controladoria – liderada por Suan
-   - DRE
-   - KPIs
-   - Dashboards Power BI
-   - Análises financeiras
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-3. Tecnologia & Desenvolvimento – liderado por Sandro
-   - Desenvolvimento de software
-   - Integrações com ERP
-   - Automação
-   - Criação de KPIs customizados
+## React Compiler
 
-OBJETIVO:
-Criar todo o conteúdo e estrutura do site institucional da ATRIOB2B com linguagem:
-- Formal corporativa
-- Didática
-- Orientada a resultados
-- Profissional, leve e moderna
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-PÚBLICO-ALVO:
-- Pequenas empresas
-- Médias empresas
-- Startups
-- E-commerce
-- Indústrias
-- Empresas de serviços
+## Expanding the ESLint configuration
 
-TOM E POSICIONAMENTO:
-- Consultoria completa (BPO + Controladoria + Tecnologia)
-- Mas com contratação modular (não é venda casada)
-- Empresa de tecnologia com serviços complementares
-- Foco na eficiência, dados e processos
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-PÁGINAS E SEÇÕES NECESSÁRIAS:
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-1. HOME
-   - Hero section com headline forte e CTA
-   - Subtítulo explicando o modelo modular
-   - Botões “Solicite uma proposta” e “WhatsApp”
-   - Destaque dos 3 pilares em cards
-   - Seção de diferenciais
-   - Chamada para contato
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-2. SOBRE
-   - História da ATRIOB2B
-   - Mini-bio dos fundadores (Eder, Suan, Sandro)
-   - Missão, visão e valores
-   - Visão sobre modularidade e integração entre áreas
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-3. SERVIÇOS
-   - Divididos em 3 grandes áreas: BPO, Controladoria, Tecnologia
-   - Cada área deve conter 3 planos: BASIC, PRO, PREMIUM
-   - Tabelas comparativas simples
-   - Descrição clara do que está incluído em cada plano
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-4. CONTATO
-   - Formulário funcional
-   - Link para WhatsApp
-   - Espaço para mensagem do cliente
-   - CTA para solicitação de proposta
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-5. (Opcional) BLOG
-   - Estrutura inicial vazia, só prepare a página
-
-REQUISITOS TÉCNICOS:
-- Projeto usando Vite
-- Componentização clara (Vue ou React dependendo do contexto do projeto)
-- Estilo limpo e moderno (CSS ou Tailwind)
-- Responsividade completa
-- Uso da paleta de cores definida no arquivo "color_palettecss.txt"
-- Estrutura organizada em pastas (components, pages, assets, styles)
-- Criar placeholders para imagens e ícones
-- Criar textos institucionais completos
-- Criar botões e CTAs funcionais
-- Preparar o site para futura expansão
-
-ENTREGAS ESPERADAS:
-- Estrutura completa do projeto
-- Código para todas as páginas
-- Componentes prontos (Header, Footer, Hero, ServicesOverview, etc.)
-- CSS base ou Tailwind configurado
-- Conteúdo real escrito com base nas informações acima
-- Navegação funcional entre páginas
-- Sugestões de seções adicionais se fizer sentido
-
-Agora gere o site completo seguindo todas essas especificações.
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
